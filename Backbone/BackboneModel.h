@@ -93,9 +93,9 @@ errorCallback:(BackboneErrorBlock)errorCallback;
 
 - (void)fetch;
 - (void)fetchWithOptions:(BackboneOptions)options;
-- (void)fetchWithSuccessCallback:(BackboneSyncSuccessBlock)successCallback
-                   errorCallback:(BackboneErrorBlock)errorCallback
-                         options:(BackboneOptions)options;
+- (void)fetchWithOptions:(BackboneOptions)options
+         successCallback:(BackboneSyncSuccessBlock)successCallback
+           errorCallback:(BackboneErrorBlock)errorCallback;
 
 - (BOOL)save;
 - (BOOL)save:(NSDictionary *)attributes;
