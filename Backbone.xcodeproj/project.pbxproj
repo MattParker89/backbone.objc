@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA04620A1572A554005CBAC9 /* MockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0462091572A554005CBAC9 /* MockModel.m */; };
+		CA427A761571CFFF00C31F7B /* NSDictionary+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CA427A741571CFFF00C31F7B /* NSDictionary+Backbone.h */; };
+		CA427A771571CFFF00C31F7B /* NSDictionary+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA427A751571CFFF00C31F7B /* NSDictionary+Backbone.m */; };
+		CA535F7915635610003FE38D /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA535F77156352F7003FE38D /* libOCMock.a */; };
+		CA62AB311569A862007CA4D9 /* ARCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CA62AB301569A862007CA4D9 /* ARCHelper.h */; };
+		CA63C83E155C814900600B74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA63C83D155C814900600B74 /* Foundation.framework */; };
+		CA63C844155C814900600B74 /* Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63C843155C814900600B74 /* Backbone.m */; };
+		CA63C84C155C814900600B74 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA63C84B155C814900600B74 /* SenTestingKit.framework */; };
+		CA63C84E155C814900600B74 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA63C84D155C814900600B74 /* UIKit.framework */; };
+		CA63C84F155C814900600B74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA63C83D155C814900600B74 /* Foundation.framework */; };
+		CA63C852155C814900600B74 /* libBackbone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA63C83A155C814900600B74 /* libBackbone.a */; };
+		CA63C858155C814900600B74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA63C856155C814900600B74 /* InfoPlist.strings */; };
+		CA63C85B155C814900600B74 /* BackboneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63C85A155C814900600B74 /* BackboneTests.m */; };
+		CA6C1E2A15ACC9BC00E699E0 /* BackboneCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C1E2915ACC9BC00E699E0 /* BackboneCollectionTests.m */; };
+		CA989BC615AF427800ED0AE1 /* MockCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = CA989BC515AF427800ED0AE1 /* MockCollection.m */; };
+		CA9C62551573CF030089795F /* NSArray+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9C62531573CF030089795F /* NSArray+Backbone.h */; };
+		CA9C62561573CF030089795F /* NSArray+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C62541573CF030089795F /* NSArray+Backbone.m */; };
+		CA9C625A1573DBA00089795F /* NSString+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9C62581573DBA00089795F /* NSString+Backbone.h */; };
+		CA9C625B1573DBA00089795F /* NSString+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C62591573DBA00089795F /* NSString+Backbone.m */; };
+		CABD3184159D038800C14B7E /* BackboneCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = CABD3182159D038800C14B7E /* BackboneCollection.h */; };
+		CABD3185159D038800C14B7E /* BackboneCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = CABD3183159D038800C14B7E /* BackboneCollection.m */; };
+		CAC4EA1B155E16CD009BA9D3 /* BackboneEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4EA1A155E16CD009BA9D3 /* BackboneEventsTests.m */; };
+		CAC4EA1F155E1777009BA9D3 /* Mixin.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC4EA1D155E1777009BA9D3 /* Mixin.h */; };
+		CAC4EA20155E1777009BA9D3 /* Mixin.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4EA1E155E1777009BA9D3 /* Mixin.m */; };
+		CAC4EA23155E31D9009BA9D3 /* BackboneModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC4EA21155E31D9009BA9D3 /* BackboneModel.h */; };
+		CAC4EA24155E31D9009BA9D3 /* BackboneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4EA22155E31D9009BA9D3 /* BackboneModel.m */; };
+		CAC4EA27155E335F009BA9D3 /* BackboneModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4EA26155E335F009BA9D3 /* BackboneModelTests.m */; };
+		CAE95B91155CDF4F0072AA10 /* BackboneEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE95B8F155CDF4F0072AA10 /* BackboneEvents.h */; };
+		CAE95B92155CDF4F0072AA10 /* BackboneEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE95B90155CDF4F0072AA10 /* BackboneEvents.m */; };
+		CAF9333315630329008AEA48 /* BackboneTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF9333215630329008AEA48 /* BackboneTypes.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA63C850155C814900600B74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA63C831155C814900600B74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA63C839155C814900600B74;
+			remoteInfo = Backbone;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA0462081572A554005CBAC9 /* MockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockModel.h; sourceTree = "<group>"; };
+		CA0462091572A554005CBAC9 /* MockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockModel.m; sourceTree = "<group>"; };
+		CA427A741571CFFF00C31F7B /* NSDictionary+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Backbone.h"; sourceTree = "<group>"; };
+		CA427A751571CFFF00C31F7B /* NSDictionary+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Backbone.m"; sourceTree = "<group>"; };
+		CA535F77156352F7003FE38D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../usr/lib/libOCMock.a; sourceTree = "<group>"; };
+		CA62AB301569A862007CA4D9 /* ARCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCHelper.h; sourceTree = "<group>"; };
+		CA63C83A155C814900600B74 /* libBackbone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBackbone.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA63C83D155C814900600B74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CA63C841155C814900600B74 /* Backbone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Backbone-Prefix.pch"; sourceTree = "<group>"; };
+		CA63C842155C814900600B74 /* Backbone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Backbone.h; sourceTree = "<group>"; };
+		CA63C843155C814900600B74 /* Backbone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Backbone.m; sourceTree = "<group>"; };
+		CA63C84A155C814900600B74 /* BackboneTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackboneTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA63C84B155C814900600B74 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CA63C84D155C814900600B74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CA63C855155C814900600B74 /* BackboneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BackboneTests-Info.plist"; sourceTree = "<group>"; };
+		CA63C857155C814900600B74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CA63C859155C814900600B74 /* BackboneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BackboneTests.h; sourceTree = "<group>"; };
+		CA63C85A155C814900600B74 /* BackboneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackboneTests.m; sourceTree = "<group>"; };
+		CA6C1E2815ACC9BC00E699E0 /* BackboneCollectionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneCollectionTests.h; sourceTree = "<group>"; };
+		CA6C1E2915ACC9BC00E699E0 /* BackboneCollectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneCollectionTests.m; sourceTree = "<group>"; };
+		CA989BC415AF427800ED0AE1 /* MockCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockCollection.h; sourceTree = "<group>"; };
+		CA989BC515AF427800ED0AE1 /* MockCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockCollection.m; sourceTree = "<group>"; };
+		CA9C62531573CF030089795F /* NSArray+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Backbone.h"; sourceTree = "<group>"; };
+		CA9C62541573CF030089795F /* NSArray+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Backbone.m"; sourceTree = "<group>"; };
+		CA9C62581573DBA00089795F /* NSString+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Backbone.h"; sourceTree = "<group>"; };
+		CA9C62591573DBA00089795F /* NSString+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Backbone.m"; sourceTree = "<group>"; };
+		CABD3182159D038800C14B7E /* BackboneCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneCollection.h; sourceTree = "<group>"; };
+		CABD3183159D038800C14B7E /* BackboneCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneCollection.m; sourceTree = "<group>"; };
+		CAC4EA19155E16CD009BA9D3 /* BackboneEventsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneEventsTests.h; sourceTree = "<group>"; };
+		CAC4EA1A155E16CD009BA9D3 /* BackboneEventsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneEventsTests.m; sourceTree = "<group>"; };
+		CAC4EA1D155E1777009BA9D3 /* Mixin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixin.h; sourceTree = "<group>"; };
+		CAC4EA1E155E1777009BA9D3 /* Mixin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixin.m; sourceTree = "<group>"; };
+		CAC4EA21155E31D9009BA9D3 /* BackboneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneModel.h; sourceTree = "<group>"; };
+		CAC4EA22155E31D9009BA9D3 /* BackboneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneModel.m; sourceTree = "<group>"; };
+		CAC4EA25155E335F009BA9D3 /* BackboneModelTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneModelTests.h; sourceTree = "<group>"; };
+		CAC4EA26155E335F009BA9D3 /* BackboneModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneModelTests.m; sourceTree = "<group>"; };
+		CAE95B8F155CDF4F0072AA10 /* BackboneEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneEvents.h; sourceTree = "<group>"; };
+		CAE95B90155CDF4F0072AA10 /* BackboneEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneEvents.m; sourceTree = "<group>"; };
+		CAF9333215630329008AEA48 /* BackboneTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneTypes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA63C837155C814900600B74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA63C83E155C814900600B74 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA63C846155C814900600B74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA535F7915635610003FE38D /* libOCMock.a in Frameworks */,
+				CA63C84C155C814900600B74 /* SenTestingKit.framework in Frameworks */,
+				CA63C84E155C814900600B74 /* UIKit.framework in Frameworks */,
+				CA63C84F155C814900600B74 /* Foundation.framework in Frameworks */,
+				CA63C852155C814900600B74 /* libBackbone.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA63C82F155C814900600B74 = {
+			isa = PBXGroup;
+			children = (
+				CA63C83F155C814900600B74 /* Backbone */,
+				CA63C853155C814900600B74 /* BackboneTests */,
+				CA63C83C155C814900600B74 /* Frameworks */,
+				CA63C83B155C814900600B74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA63C83B155C814900600B74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA63C83A155C814900600B74 /* libBackbone.a */,
+				CA63C84A155C814900600B74 /* BackboneTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA63C83C155C814900600B74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA63C83D155C814900600B74 /* Foundation.framework */,
+				CA63C84B155C814900600B74 /* SenTestingKit.framework */,
+				CA63C84D155C814900600B74 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA63C83F155C814900600B74 /* Backbone */ = {
+			isa = PBXGroup;
+			children = (
+				CA62AB301569A862007CA4D9 /* ARCHelper.h */,
+				CAC4EA1D155E1777009BA9D3 /* Mixin.h */,
+				CAC4EA1E155E1777009BA9D3 /* Mixin.m */,
+				CA427A741571CFFF00C31F7B /* NSDictionary+Backbone.h */,
+				CA427A751571CFFF00C31F7B /* NSDictionary+Backbone.m */,
+				CA9C62531573CF030089795F /* NSArray+Backbone.h */,
+				CA9C62541573CF030089795F /* NSArray+Backbone.m */,
+				CA9C62581573DBA00089795F /* NSString+Backbone.h */,
+				CA9C62591573DBA00089795F /* NSString+Backbone.m */,
+				CAF9333215630329008AEA48 /* BackboneTypes.h */,
+				CA63C842155C814900600B74 /* Backbone.h */,
+				CA63C843155C814900600B74 /* Backbone.m */,
+				CAE95B8F155CDF4F0072AA10 /* BackboneEvents.h */,
+				CAE95B90155CDF4F0072AA10 /* BackboneEvents.m */,
+				CAC4EA21155E31D9009BA9D3 /* BackboneModel.h */,
+				CAC4EA22155E31D9009BA9D3 /* BackboneModel.m */,
+				CABD3182159D038800C14B7E /* BackboneCollection.h */,
+				CABD3183159D038800C14B7E /* BackboneCollection.m */,
+				CA63C840155C814900600B74 /* Supporting Files */,
+			);
+			path = Backbone;
+			sourceTree = "<group>";
+		};
+		CA63C840155C814900600B74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA63C841155C814900600B74 /* Backbone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CA63C853155C814900600B74 /* BackboneTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA535F77156352F7003FE38D /* libOCMock.a */,
+				CA63C859155C814900600B74 /* BackboneTests.h */,
+				CA63C85A155C814900600B74 /* BackboneTests.m */,
+				CAC4EA19155E16CD009BA9D3 /* BackboneEventsTests.h */,
+				CAC4EA1A155E16CD009BA9D3 /* BackboneEventsTests.m */,
+				CAC4EA25155E335F009BA9D3 /* BackboneModelTests.h */,
+				CAC4EA26155E335F009BA9D3 /* BackboneModelTests.m */,
+				CA6C1E2815ACC9BC00E699E0 /* BackboneCollectionTests.h */,
+				CA6C1E2915ACC9BC00E699E0 /* BackboneCollectionTests.m */,
+				CA0462081572A554005CBAC9 /* MockModel.h */,
+				CA0462091572A554005CBAC9 /* MockModel.m */,
+				CA989BC415AF427800ED0AE1 /* MockCollection.h */,
+				CA989BC515AF427800ED0AE1 /* MockCollection.m */,
+				CA63C854155C814900600B74 /* Supporting Files */,
+			);
+			path = BackboneTests;
+			sourceTree = "<group>";
+		};
+		CA63C854155C814900600B74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CA63C855155C814900600B74 /* BackboneTests-Info.plist */,
+				CA63C856155C814900600B74 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CA63C838155C814900600B74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE95B91155CDF4F0072AA10 /* BackboneEvents.h in Headers */,
+				CAC4EA1F155E1777009BA9D3 /* Mixin.h in Headers */,
+				CAC4EA23155E31D9009BA9D3 /* BackboneModel.h in Headers */,
+				CAF9333315630329008AEA48 /* BackboneTypes.h in Headers */,
+				CA62AB311569A862007CA4D9 /* ARCHelper.h in Headers */,
+				CA427A761571CFFF00C31F7B /* NSDictionary+Backbone.h in Headers */,
+				CA9C62551573CF030089795F /* NSArray+Backbone.h in Headers */,
+				CA9C625A1573DBA00089795F /* NSString+Backbone.h in Headers */,
+				CABD3184159D038800C14B7E /* BackboneCollection.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CA63C839155C814900600B74 /* Backbone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA63C85E155C814900600B74 /* Build configuration list for PBXNativeTarget "Backbone" */;
+			buildPhases = (
+				CA63C836155C814900600B74 /* Sources */,
+				CA63C837155C814900600B74 /* Frameworks */,
+				CA63C838155C814900600B74 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Backbone;
+			productName = Backbone;
+			productReference = CA63C83A155C814900600B74 /* libBackbone.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CA63C849155C814900600B74 /* BackboneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA63C861155C814900600B74 /* Build configuration list for PBXNativeTarget "BackboneTests" */;
+			buildPhases = (
+				CA63C845155C814900600B74 /* Sources */,
+				CA63C846155C814900600B74 /* Frameworks */,
+				CA63C847155C814900600B74 /* Resources */,
+				CA63C848155C814900600B74 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA63C851155C814900600B74 /* PBXTargetDependency */,
+			);
+			name = BackboneTests;
+			productName = BackboneTests;
+			productReference = CA63C84A155C814900600B74 /* BackboneTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA63C831155C814900600B74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = CA63C834155C814900600B74 /* Build configuration list for PBXProject "Backbone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CA63C82F155C814900600B74;
+			productRefGroup = CA63C83B155C814900600B74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA63C839155C814900600B74 /* Backbone */,
+				CA63C849155C814900600B74 /* BackboneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA63C847155C814900600B74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA63C858155C814900600B74 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CA63C848155C814900600B74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA63C836155C814900600B74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA63C844155C814900600B74 /* Backbone.m in Sources */,
+				CAE95B92155CDF4F0072AA10 /* BackboneEvents.m in Sources */,
+				CAC4EA20155E1777009BA9D3 /* Mixin.m in Sources */,
+				CAC4EA24155E31D9009BA9D3 /* BackboneModel.m in Sources */,
+				CA427A771571CFFF00C31F7B /* NSDictionary+Backbone.m in Sources */,
+				CA9C62561573CF030089795F /* NSArray+Backbone.m in Sources */,
+				CA9C625B1573DBA00089795F /* NSString+Backbone.m in Sources */,
+				CABD3185159D038800C14B7E /* BackboneCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA63C845155C814900600B74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA63C85B155C814900600B74 /* BackboneTests.m in Sources */,
+				CAC4EA1B155E16CD009BA9D3 /* BackboneEventsTests.m in Sources */,
+				CAC4EA27155E335F009BA9D3 /* BackboneModelTests.m in Sources */,
+				CA04620A1572A554005CBAC9 /* MockModel.m in Sources */,
+				CA6C1E2A15ACC9BC00E699E0 /* BackboneCollectionTests.m in Sources */,
+				CA989BC615AF427800ED0AE1 /* MockCollection.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA63C851155C814900600B74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA63C839155C814900600B74 /* Backbone */;
+			targetProxy = CA63C850155C814900600B74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA63C856155C814900600B74 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA63C857155C814900600B74 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA63C85C155C814900600B74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA63C85D155C814900600B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA63C85F155C814900600B74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Backbone.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backbone/Backbone-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/LRResty-chtktspndutlqxfqxeluflueasxk/Build/Products/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CA63C860155C814900600B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Backbone.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backbone/Backbone-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Library/Developer/Xcode/DerivedData/LRResty-chtktspndutlqxfqxeluflueasxk/Build/Products/Debug-iphoneos\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CA63C862155C814900600B74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backbone/Backbone-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/usr/include\"";
+				INFOPLIST_FILE = "BackboneTests/BackboneTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/usr/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CA63C863155C814900600B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Backbone/Backbone-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/usr/include\"";
+				INFOPLIST_FILE = "BackboneTests/BackboneTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/usr/lib\"",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"$(SRCROOT)/usr/lib/libOCMock.a\"",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA63C834155C814900600B74 /* Build configuration list for PBXProject "Backbone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA63C85C155C814900600B74 /* Debug */,
+				CA63C85D155C814900600B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA63C85E155C814900600B74 /* Build configuration list for PBXNativeTarget "Backbone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA63C85F155C814900600B74 /* Debug */,
+				CA63C860155C814900600B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA63C861155C814900600B74 /* Build configuration list for PBXNativeTarget "BackboneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA63C862155C814900600B74 /* Debug */,
+				CA63C863155C814900600B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA63C831155C814900600B74 /* Project object */;
+}
