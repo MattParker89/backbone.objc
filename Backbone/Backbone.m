@@ -13,7 +13,13 @@
 
 @implementation Backbone
 
+static BackboneHistory *history__;
 static BOOL emulateHTTP__ = NO, emulateJSON__ = NO;
+
++ (BackboneHistory *)history {
+  if (history__) return history__;
+  return history__ = [[BackboneHistory alloc] init];
+}
 
 + (void)emulateHTTP { emulateHTTP__ = YES; }
 + (void)emulateJSON { emulateJSON__ = YES; }

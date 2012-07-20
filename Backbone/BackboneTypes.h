@@ -30,4 +30,9 @@ typedef enum {
   BackboneAddToCollection = 4 << 0
 } BackboneOptions;
 
+typedef enum {
+  BackboneHistoryReplace = 1 << 0,
+  BackboneHistoryTrigger = 2 << 0
+} BackboneHistoryOptions;
+
 #endif

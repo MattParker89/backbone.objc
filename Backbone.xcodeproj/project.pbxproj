@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CA04620A1572A554005CBAC9 /* MockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0462091572A554005CBAC9 /* MockModel.m */; };
+		CA0A9B3F15B8BE5F0031A322 /* BackboneHistory.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0A9B3D15B8BE5F0031A322 /* BackboneHistory.h */; };
+		CA0A9B4015B8BE5F0031A322 /* BackboneHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = CA0A9B3E15B8BE5F0031A322 /* BackboneHistory.m */; };
 		CA427A761571CFFF00C31F7B /* NSDictionary+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CA427A741571CFFF00C31F7B /* NSDictionary+Backbone.h */; };
 		CA427A771571CFFF00C31F7B /* NSDictionary+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA427A751571CFFF00C31F7B /* NSDictionary+Backbone.m */; };
 		CA535F7915635610003FE38D /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA535F77156352F7003FE38D /* libOCMock.a */; };
@@ -52,6 +54,8 @@
 /* Begin PBXFileReference section */
 		CA0462081572A554005CBAC9 /* MockModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockModel.h; sourceTree = "<group>"; };
 		CA0462091572A554005CBAC9 /* MockModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockModel.m; sourceTree = "<group>"; };
+		CA0A9B3D15B8BE5F0031A322 /* BackboneHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneHistory.h; sourceTree = "<group>"; };
+		CA0A9B3E15B8BE5F0031A322 /* BackboneHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneHistory.m; sourceTree = "<group>"; };
 		CA427A741571CFFF00C31F7B /* NSDictionary+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Backbone.h"; sourceTree = "<group>"; };
 		CA427A751571CFFF00C31F7B /* NSDictionary+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Backbone.m"; sourceTree = "<group>"; };
 		CA535F77156352F7003FE38D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../usr/lib/libOCMock.a; sourceTree = "<group>"; };
@@ -165,6 +169,8 @@
 				CAC4EA22155E31D9009BA9D3 /* BackboneModel.m */,
 				CABD3182159D038800C14B7E /* BackboneCollection.h */,
 				CABD3183159D038800C14B7E /* BackboneCollection.m */,
+				CA0A9B3D15B8BE5F0031A322 /* BackboneHistory.h */,
+				CA0A9B3E15B8BE5F0031A322 /* BackboneHistory.m */,
 				CA63C840155C814900600B74 /* Supporting Files */,
 			);
 			path = Backbone;
@@ -224,6 +230,7 @@
 				CA9C62551573CF030089795F /* NSArray+Backbone.h in Headers */,
 				CA9C625A1573DBA00089795F /* NSString+Backbone.h in Headers */,
 				CABD3184159D038800C14B7E /* BackboneCollection.h in Headers */,
+				CA0A9B3F15B8BE5F0031A322 /* BackboneHistory.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +339,7 @@
 				CA9C62561573CF030089795F /* NSArray+Backbone.m in Sources */,
 				CA9C625B1573DBA00089795F /* NSString+Backbone.m in Sources */,
 				CABD3185159D038800C14B7E /* BackboneCollection.m in Sources */,
+				CA0A9B4015B8BE5F0031A322 /* BackboneHistory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
