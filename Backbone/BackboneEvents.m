@@ -185,7 +185,7 @@ static NSMutableDictionary *caches__ = nil;
   [self trigger:events argumentsArray:nil];
 }
 
-- (void)trigger:(NSString *)events argumentsArray:(NSMutableArray *)arguments {
+- (void)trigger:(NSString *)events argumentsArray:(NSArray *)arguments {
   NSArray *eventsAsArray, *all;
   NSMutableArray *list;
   NSNotification *notification;
@@ -196,7 +196,7 @@ static NSMutableDictionary *caches__ = nil;
     observerCache =
       [caches__ objectForKey:[[self class] cacheIdentifierFor:self]];
     
-    if (!arguments) arguments = [NSMutableArray array];
+    if (!arguments) arguments = [NSArray array];
     
     eventsAsArray = [events componentsSeparatedByCharactersInSet:
                      [NSCharacterSet whitespaceAndNewlineCharacterSet]];

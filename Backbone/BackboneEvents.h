@@ -34,7 +34,7 @@
 - (void)unbind:(NSString *)events observer:(id)observer;
 
 - (void)trigger:(NSString *)events;
-- (void)trigger:(NSString *)events argumentsArray:(NSMutableArray *)arguments;
+- (void)trigger:(NSString *)events argumentsArray:(NSArray *)arguments;
 - (void)trigger:(NSString *)events 
       arguments:(id)firstArgument, ... NS_REQUIRES_NIL_TERMINATION;
 
