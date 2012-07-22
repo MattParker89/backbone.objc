@@ -11,6 +11,7 @@
 #import "BackboneEvents.h"
 #import "BackboneModel.h"
 #import "BackboneCollection.h"
+#import "BackboneRouter.h"
 #import "BackboneHistory.h"
 
 @interface Backbone : NSObject {

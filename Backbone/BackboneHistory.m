@@ -14,9 +14,9 @@
 @implementation BackboneHistory
 
 + (void)initialize {
-	if ([self class] == [BackboneHistory class]) {
+  if ([self class] == [BackboneHistory class]) {
     // Mixin BackboneEvents methods into BackboneCollection.
-		[Mixin from:[BackboneEvents class] into:self];
+    [Mixin from:[BackboneEvents class] into:self];
   }
 }
 

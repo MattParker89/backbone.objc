@@ -13,6 +13,8 @@
 		CA427A761571CFFF00C31F7B /* NSDictionary+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CA427A741571CFFF00C31F7B /* NSDictionary+Backbone.h */; };
 		CA427A771571CFFF00C31F7B /* NSDictionary+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA427A751571CFFF00C31F7B /* NSDictionary+Backbone.m */; };
 		CA535F7915635610003FE38D /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA535F77156352F7003FE38D /* libOCMock.a */; };
+		CA57113F15BA18160048E91F /* BackboneRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA57113D15BA18160048E91F /* BackboneRouter.h */; };
+		CA57114015BA18160048E91F /* BackboneRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA57113E15BA18160048E91F /* BackboneRouter.m */; };
 		CA62AB311569A862007CA4D9 /* ARCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = CA62AB301569A862007CA4D9 /* ARCHelper.h */; };
 		CA63C83E155C814900600B74 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA63C83D155C814900600B74 /* Foundation.framework */; };
 		CA63C844155C814900600B74 /* Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63C843155C814900600B74 /* Backbone.m */; };
@@ -28,6 +30,8 @@
 		CA9C62561573CF030089795F /* NSArray+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C62541573CF030089795F /* NSArray+Backbone.m */; };
 		CA9C625A1573DBA00089795F /* NSString+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9C62581573DBA00089795F /* NSString+Backbone.h */; };
 		CA9C625B1573DBA00089795F /* NSString+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C62591573DBA00089795F /* NSString+Backbone.m */; };
+		CAB9778915BB2F7C00E5622E /* NSObject+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CAB9778715BB2F7C00E5622E /* NSObject+Backbone.h */; };
+		CAB9778A15BB2F7C00E5622E /* NSObject+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB9778815BB2F7C00E5622E /* NSObject+Backbone.m */; };
 		CABD3184159D038800C14B7E /* BackboneCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = CABD3182159D038800C14B7E /* BackboneCollection.h */; };
 		CABD3185159D038800C14B7E /* BackboneCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = CABD3183159D038800C14B7E /* BackboneCollection.m */; };
 		CAC4EA1B155E16CD009BA9D3 /* BackboneEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4EA1A155E16CD009BA9D3 /* BackboneEventsTests.m */; };
@@ -59,6 +63,8 @@
 		CA427A741571CFFF00C31F7B /* NSDictionary+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Backbone.h"; sourceTree = "<group>"; };
 		CA427A751571CFFF00C31F7B /* NSDictionary+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Backbone.m"; sourceTree = "<group>"; };
 		CA535F77156352F7003FE38D /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = ../usr/lib/libOCMock.a; sourceTree = "<group>"; };
+		CA57113D15BA18160048E91F /* BackboneRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneRouter.h; sourceTree = "<group>"; };
+		CA57113E15BA18160048E91F /* BackboneRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneRouter.m; sourceTree = "<group>"; };
 		CA62AB301569A862007CA4D9 /* ARCHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCHelper.h; sourceTree = "<group>"; };
 		CA63C83A155C814900600B74 /* libBackbone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBackbone.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA63C83D155C814900600B74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,6 +86,8 @@
 		CA9C62541573CF030089795F /* NSArray+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Backbone.m"; sourceTree = "<group>"; };
 		CA9C62581573DBA00089795F /* NSString+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Backbone.h"; sourceTree = "<group>"; };
 		CA9C62591573DBA00089795F /* NSString+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Backbone.m"; sourceTree = "<group>"; };
+		CAB9778715BB2F7C00E5622E /* NSObject+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Backbone.h"; sourceTree = "<group>"; };
+		CAB9778815BB2F7C00E5622E /* NSObject+Backbone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Backbone.m"; sourceTree = "<group>"; };
 		CABD3182159D038800C14B7E /* BackboneCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneCollection.h; sourceTree = "<group>"; };
 		CABD3183159D038800C14B7E /* BackboneCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneCollection.m; sourceTree = "<group>"; };
 		CAC4EA19155E16CD009BA9D3 /* BackboneEventsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneEventsTests.h; sourceTree = "<group>"; };
@@ -160,6 +168,8 @@
 				CA9C62541573CF030089795F /* NSArray+Backbone.m */,
 				CA9C62581573DBA00089795F /* NSString+Backbone.h */,
 				CA9C62591573DBA00089795F /* NSString+Backbone.m */,
+				CAB9778715BB2F7C00E5622E /* NSObject+Backbone.h */,
+				CAB9778815BB2F7C00E5622E /* NSObject+Backbone.m */,
 				CAF9333215630329008AEA48 /* BackboneTypes.h */,
 				CA63C842155C814900600B74 /* Backbone.h */,
 				CA63C843155C814900600B74 /* Backbone.m */,
@@ -169,6 +179,8 @@
 				CAC4EA22155E31D9009BA9D3 /* BackboneModel.m */,
 				CABD3182159D038800C14B7E /* BackboneCollection.h */,
 				CABD3183159D038800C14B7E /* BackboneCollection.m */,
+				CA57113D15BA18160048E91F /* BackboneRouter.h */,
+				CA57113E15BA18160048E91F /* BackboneRouter.m */,
 				CA0A9B3D15B8BE5F0031A322 /* BackboneHistory.h */,
 				CA0A9B3E15B8BE5F0031A322 /* BackboneHistory.m */,
 				CA63C840155C814900600B74 /* Supporting Files */,
@@ -231,6 +243,8 @@
 				CA9C625A1573DBA00089795F /* NSString+Backbone.h in Headers */,
 				CABD3184159D038800C14B7E /* BackboneCollection.h in Headers */,
 				CA0A9B3F15B8BE5F0031A322 /* BackboneHistory.h in Headers */,
+				CA57113F15BA18160048E91F /* BackboneRouter.h in Headers */,
+				CAB9778915BB2F7C00E5622E /* NSObject+Backbone.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +354,8 @@
 				CA9C625B1573DBA00089795F /* NSString+Backbone.m in Sources */,
 				CABD3185159D038800C14B7E /* BackboneCollection.m in Sources */,
 				CA0A9B4015B8BE5F0031A322 /* BackboneHistory.m in Sources */,
+				CA57114015BA18160048E91F /* BackboneRouter.m in Sources */,
+				CAB9778A15BB2F7C00E5622E /* NSObject+Backbone.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
