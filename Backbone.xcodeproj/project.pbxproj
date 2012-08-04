@@ -25,6 +25,8 @@
 		CA63C858155C814900600B74 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA63C856155C814900600B74 /* InfoPlist.strings */; };
 		CA63C85B155C814900600B74 /* BackboneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA63C85A155C814900600B74 /* BackboneTests.m */; };
 		CA6C1E2A15ACC9BC00E699E0 /* BackboneCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6C1E2915ACC9BC00E699E0 /* BackboneCollectionTests.m */; };
+		CA7E7A5115CDCB9F0033161D /* BackboneRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7E7A5015CDCB9F0033161D /* BackboneRouterTests.m */; };
+		CA7E7A5515CDCBE50033161D /* MockRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7E7A5415CDCBE50033161D /* MockRouter.m */; };
 		CA989BC615AF427800ED0AE1 /* MockCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = CA989BC515AF427800ED0AE1 /* MockCollection.m */; };
 		CA9C62551573CF030089795F /* NSArray+Backbone.h in Headers */ = {isa = PBXBuildFile; fileRef = CA9C62531573CF030089795F /* NSArray+Backbone.h */; };
 		CA9C62561573CF030089795F /* NSArray+Backbone.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9C62541573CF030089795F /* NSArray+Backbone.m */; };
@@ -80,6 +82,10 @@
 		CA63C85A155C814900600B74 /* BackboneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BackboneTests.m; sourceTree = "<group>"; };
 		CA6C1E2815ACC9BC00E699E0 /* BackboneCollectionTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneCollectionTests.h; sourceTree = "<group>"; };
 		CA6C1E2915ACC9BC00E699E0 /* BackboneCollectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneCollectionTests.m; sourceTree = "<group>"; };
+		CA7E7A4F15CDCB9F0033161D /* BackboneRouterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneRouterTests.h; sourceTree = "<group>"; };
+		CA7E7A5015CDCB9F0033161D /* BackboneRouterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneRouterTests.m; sourceTree = "<group>"; };
+		CA7E7A5315CDCBE50033161D /* MockRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockRouter.h; sourceTree = "<group>"; };
+		CA7E7A5415CDCBE50033161D /* MockRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockRouter.m; sourceTree = "<group>"; };
 		CA989BC415AF427800ED0AE1 /* MockCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockCollection.h; sourceTree = "<group>"; };
 		CA989BC515AF427800ED0AE1 /* MockCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockCollection.m; sourceTree = "<group>"; };
 		CA9C62531573CF030089795F /* NSArray+Backbone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Backbone.h"; sourceTree = "<group>"; };
@@ -208,10 +214,14 @@
 				CAC4EA26155E335F009BA9D3 /* BackboneModelTests.m */,
 				CA6C1E2815ACC9BC00E699E0 /* BackboneCollectionTests.h */,
 				CA6C1E2915ACC9BC00E699E0 /* BackboneCollectionTests.m */,
+				CA7E7A4F15CDCB9F0033161D /* BackboneRouterTests.h */,
+				CA7E7A5015CDCB9F0033161D /* BackboneRouterTests.m */,
 				CA0462081572A554005CBAC9 /* MockModel.h */,
 				CA0462091572A554005CBAC9 /* MockModel.m */,
 				CA989BC415AF427800ED0AE1 /* MockCollection.h */,
 				CA989BC515AF427800ED0AE1 /* MockCollection.m */,
+				CA7E7A5315CDCBE50033161D /* MockRouter.h */,
+				CA7E7A5415CDCBE50033161D /* MockRouter.m */,
 				CA63C854155C814900600B74 /* Supporting Files */,
 			);
 			path = BackboneTests;
@@ -369,6 +379,8 @@
 				CA04620A1572A554005CBAC9 /* MockModel.m in Sources */,
 				CA6C1E2A15ACC9BC00E699E0 /* BackboneCollectionTests.m in Sources */,
 				CA989BC615AF427800ED0AE1 /* MockCollection.m in Sources */,
+				CA7E7A5115CDCB9F0033161D /* BackboneRouterTests.m in Sources */,
+				CA7E7A5515CDCBE50033161D /* MockRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
