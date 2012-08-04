@@ -19,7 +19,7 @@ NSArray *getPropertyAttributes(objc_property_t property) {
 }
 
 void *attributeGetter(BackboneModel *self, SEL _cmd) {
-  return (__bridge void *)[self get:NSStringFromSelector(_cmd)];
+  return (__AH_BRIDGE void *)[self get:NSStringFromSelector(_cmd)];
 }
 
 @implementation BackboneModel
@@ -509,9 +509,9 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
   if ([self isNew]) return base;
   
   stringId = [NSString stringWithFormat:@"%@", self.id];
-  encodedId = AH_AUTORELEASE((__bridge NSString *)
+  encodedId = AH_AUTORELEASE((__AH_BRIDGE NSString *)
     CFURLCreateStringByAddingPercentEscapes(NULL, 
-                                            (__bridge CFStringRef)stringId, 
+                                            (__AH_BRIDGE CFStringRef)stringId,
                                             NULL, 
                                             (CFStringRef)@"!*'();:@&=+$,/?%#[]",
                                             kCFStringEncodingUTF8));

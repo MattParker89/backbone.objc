@@ -13,11 +13,11 @@
 
 - (NSString *)encodedURL {
   CFStringRef urlString = CFURLCreateStringByAddingPercentEscapes
-    (NULL, (CFStringRef)self, NULL, 
+    (NULL, (__AH_BRIDGE CFStringRef)self, NULL, 
      (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", 
      kCFStringEncodingUTF8);
   
-  return AH_AUTORELEASE((NSString *)urlString);
+  return AH_AUTORELEASE((__AH_BRIDGE NSString *)urlString);
 }
 
 @end

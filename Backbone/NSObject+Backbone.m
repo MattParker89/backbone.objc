@@ -23,7 +23,7 @@
   [invocation setSelector:selector];
   
   index = 2;
-  for (id object in objects) {
+  for (__strong id object in objects) {
     [invocation setArgument:&object atIndex:index ++];  
   }
   

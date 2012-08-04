@@ -43,7 +43,7 @@
 - (NSDictionary *)toJSON {
   NSMutableArray *result = [NSMutableArray array];
   
-  for (id object in self) {
+  for (__strong id object in self) {
     if ([object respondsToSelector:@selector(toJSON)]) {
       object = [object performSelector:@selector(toJSON)];
     }
