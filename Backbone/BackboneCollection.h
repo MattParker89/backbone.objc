@@ -55,8 +55,6 @@ errorCallback:(BackboneErrorBlock)errorCallback;
 - (void)add:(id)modelOrAttributes
          at:(NSUInteger)at 
 errorCallback:(BackboneErrorBlock)errorCallback;
-- (void)add:(id)modelOrAttributes;
-- (void)add:(id)modelOrAttributes;
 - (void)addModels:(NSArray *)models;
 - (void)addModels:(NSArray *)models options:(BackboneOptions)options;
 - (void)addModels:(NSArray *)models at:(NSUInteger)at;
