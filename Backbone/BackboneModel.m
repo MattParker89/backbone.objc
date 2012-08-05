@@ -497,7 +497,7 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
 }
 
 - (NSString *)url {
-  NSString *base, *stringId, *encodedId;
+  NSString *base, *stringId, *encodedId, *modelUrl;
   
   if (!(base = self.urlRoot ? self.urlRoot : collection_.url)) {
     @throw([NSException 
@@ -509,16 +509,20 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
   if ([self isNew]) return base;
   
   stringId = [NSString stringWithFormat:@"%@", self.id];
-  encodedId = AH_AUTORELEASE((__AH_BRIDGE NSString *)
+  encodedId = (__AH_BRIDGE NSString *)
     CFURLCreateStringByAddingPercentEscapes(NULL, 
                                             (__AH_BRIDGE CFStringRef)stringId,
                                             NULL, 
                                             (CFStringRef)@"!*'();:@&=+$,/?%#[]",
-                                            kCFStringEncodingUTF8));
+                                            kCFStringEncodingUTF8);
   
-  return [base stringByAppendingFormat:@"%@%@",
-          ([base characterAtIndex:base.length - 1] == '/' ? @"" : @"/"),
-          encodedId];
+  modelUrl = [base stringByAppendingFormat:@"%@%@",
+              ([base characterAtIndex:base.length - 1] == '/' ? @"" : @"/"),
+              encodedId];
+  
+  CFRelease((__AH_BRIDGE CFStringRef)encodedId);
+  
+  return modelUrl;
 }
 
 - (NSDictionary *)parse:(NSDictionary *)response {

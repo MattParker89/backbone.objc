@@ -17,7 +17,9 @@
      (CFStringRef)@"!*'\"();:@&=+$,/?%#[]% ", 
      kCFStringEncodingUTF8);
   
-  return AH_AUTORELEASE((__AH_BRIDGE NSString *)urlString);
+  NSString *url = [NSString stringWithString:(__AH_BRIDGE NSString *)urlString];
+  CFRelease(urlString);
+  return url;
 }
 
 @end
