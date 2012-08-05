@@ -31,13 +31,13 @@
 - (void)testRoutesSimple {
   [[Backbone history] navigate:@"search/news" options:BackboneHistoryTrigger];
   STAssertEqualObjects(router_.query, @"news", nil);
-  STAssertNil(router_.page, nil);
+  STAssertEquals(router_.page, (NSUInteger)0, nil);
 }
 
 - (void)testRoutesTwoPart {
   [[Backbone history] navigate:@"search/nyc/p10" options:BackboneHistoryTrigger];
   STAssertEqualObjects(router_.query, @"nyc", nil);
-  STAssertEqualObjects(router_.page, @"10", nil);
+  STAssertEquals(router_.page, (NSUInteger)10, nil);
 }
 
 - (void)testRoutePrecedence {
@@ -106,7 +106,7 @@
   [[Backbone history] navigate:@"search/fat"
                        options:BackboneHistoryTrigger];
   STAssertEqualObjects(router_.query, @"fat", nil);
-  STAssertNil(router_.page, nil);
+  STAssertEquals(router_.page, (NSUInteger)0, nil);
 }
 
 @end

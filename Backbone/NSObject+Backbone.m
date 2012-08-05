@@ -24,7 +24,39 @@
   
   index = 2;
   for (__strong id object in objects) {
-    [invocation setArgument:&object atIndex:index ++];  
+    const char *type =
+      [[[self class] instanceMethodSignatureForSelector:selector]
+       getArgumentTypeAtIndex:index];
+    
+    if (strcmp(type, @encode(unsigned int)) == 0) {
+      unsigned int argument = [object intValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else if (strcmp(type,@encode(int)) == 0) {
+      int argument = [object intValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else if (strcmp(type, @encode(unsigned short)) == 0) {
+      unsigned short argument = [object shortValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else if (strcmp(type,@encode(short)) == 0) {
+      short argument = [object shortValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else if (strcmp(type,@encode(float)) == 0) {
+      float argument = [object floatValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else if (strcmp(type,@encode(double)) == 0) {
+      double argument = [object doubleValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else if (strcmp(type,@encode(unsigned long long)) == 0) {
+      unsigned long long argument = [object longLongValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else if (strcmp(type,@encode(long long)) == 0) {
+      long long argument = [object longLongValue];
+      [invocation setArgument:&argument atIndex:index];
+    } else {
+      [invocation setArgument:&object atIndex:index];
+    }
+    
+    index ++;
   }
   
   [invocation invoke];

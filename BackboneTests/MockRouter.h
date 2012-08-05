@@ -10,7 +10,8 @@
 
 @interface MockRouter : BackboneRouter {
   NSUInteger count_;
-  NSString *query_, *page_;
+  NSString *query_;
+  NSUInteger page_;
   NSString *contact_;
   NSString *args_;
   NSString *first_, *part_, *rest_;
@@ -19,7 +20,8 @@
 }
 
 @property (nonatomic, assign) NSUInteger count;
-@property (nonatomic, strong) NSString *query, *page;
+@property (nonatomic, strong) NSString *query;
+@property (nonatomic, assign) NSUInteger page;
 @property (nonatomic, strong) NSString *contact;
 @property (nonatomic, strong) NSString *args;
 @property (nonatomic, strong) NSString *first, *part, *rest;

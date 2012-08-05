@@ -30,6 +30,8 @@
     [self route:@"search/:query" name:@"searchWithQuery:"];
     [self route:@"counter" name:@"counter"];
     [self route:@"noCallback" name:@"noCallback"];
+    
+    page_ = 0;
   }
   
   return self;
@@ -43,7 +45,7 @@
   query_ = query;
 }
 
-- (void)searchWithQuery:(NSString *)query page:(NSString *)page {
+- (void)searchWithQuery:(NSString *)query page:(NSUInteger)page {
   [self searchWithQuery:query];
   page_ = page;
 }
