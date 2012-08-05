@@ -41,7 +41,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
   
   // Create the request with the default content type.
   request = [NSMutableURLRequest
-             requestWithURL:[NSURL URLWithString:[model url]]];
+             requestWithURL:[NSURL URLWithString:(id)[model url]]];
   request.HTTPMethod = httpMethod;
   contentType = @"application/x-www-form-urlencoded";
   
