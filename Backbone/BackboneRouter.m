@@ -108,4 +108,11 @@ static const NSString *escapeRegExp = @"[-\\[\\]{}()+?.,\\\\^$|#\\s]";
   return [NSArray arrayWithArray:parameters];
 }
 
+- (void)dealloc {
+  // Remove all events binded to the router.
+  [self off];
+  
+  AH_SUPER_DEALLOC;
+}
+
 @end

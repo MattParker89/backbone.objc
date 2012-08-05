@@ -76,6 +76,9 @@
 - (void)dealloc {  
   AH_RELEASE(handlers_);
   AH_RELEASE(history_);
+
+  // Remove all events binded to history.
+  [self off];
   
   AH_SUPER_DEALLOC;
 }

@@ -604,6 +604,9 @@ errorCallback:errorCallback];
   AH_RELEASE(byId_);
   AH_BLOCK_RELEASE(onModelEvent_);
   
+  // Remove all events binded to the collection.
+  [self off];
+  
   AH_SUPER_DEALLOC;
 }
 
