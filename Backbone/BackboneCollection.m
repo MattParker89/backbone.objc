@@ -50,6 +50,14 @@
   self = [super init];
   
   if (self) {
+    if (!(model_ = model)) model_ = [BackboneModel class];
+    models_ = AH_RETAIN([NSMutableArray array]);
+    byId_ = AH_RETAIN([NSMutableDictionary dictionary]);
+    byCid_ = AH_RETAIN([NSMutableDictionary dictionary]);
+    
+    __strong id this = self;
+    __strong NSMutableDictionary *byId = byId_;
+    
     onModelEvent_ = AH_BLOCK_COPY(^(NSNotification *notification) {
       NSString *event;
       BackboneModel *model;
@@ -58,31 +66,27 @@
       
       event = notification.name;
       
-      if ([notification.object count] >= 2) {      
+      if ([notification.object count] >= 2) {
         model = [notification.object objectAtIndex:0];
         collection = [notification.object objectAtIndex:1];
         
-        if (([event isEqual:@"add"] || 
-             [event isEqual:@"remove"]) && collection != self) return;
+        if (([event isEqual:@"add"] ||
+             [event isEqual:@"remove"]) && collection != this) return;
         if ([event isEqual:@"destroy"]) {
           options = [[notification.object objectAtIndex:2] integerValue];
-          [self remove:model options:options];
+          [this remove:model options:options];
         }
         if (model && [event isEqual:[NSString stringWithFormat:
-                                             @"change:%@",
-                                             [[model class] idAttribute]]]) {
-          [byId_ removeObjectForKey:[model previous:[[model class] idAttribute]]];
-          if (model.id) [byId_ setObject:model forKey:model.id];
+                                     @"change:%@",
+                                     [[model class] idAttribute]]]) {
+          [byId removeObjectForKey:[model previous:[[model class] idAttribute]]];
+          if (model.id) [byId setObject:model forKey:model.id];
         }
       }
       
-      [self trigger:event argumentsArray:notification.object];
+      [this trigger:event argumentsArray:notification.object];
     });
     
-    if (!(model_ = model)) model_ = [BackboneModel class];
-    models_ = AH_RETAIN([NSMutableArray array]);
-    byId_ = AH_RETAIN([NSMutableDictionary dictionary]);
-    byCid_ = AH_RETAIN([NSMutableDictionary dictionary]);
     [self reset:models options:options];
   }
   

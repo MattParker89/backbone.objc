@@ -34,7 +34,7 @@ static const NSString *escapeRegExp = @"[-\\[\\]{}()+?.,\\\\^$|#\\s]";
     route = [self routeToRegExp:route];
   }
   
-  [[Backbone history] route:route toCallback:^(NSString *url) {
+  id callback = ^(NSString *url) {
     NSArray *args;
     NSString *eventName;
     
@@ -47,7 +47,9 @@ static const NSString *escapeRegExp = @"[-\\[\\]{}()+?.,\\\\^$|#\\s]";
     
     [self trigger:eventName argumentsArray:args];
     [[Backbone history] trigger:@"route" arguments:self, name, args, nil];
-  }];
+  };
+  
+  [[Backbone history] route:route toCallback:AH_BLOCK_COPY(callback)];
 }
 
 - (void)navigate:(NSString *)url options:(BackboneHistoryOptions)options {
