@@ -14,7 +14,7 @@
 #import "Backbone.h"
 
 NSArray *getPropertyAttributes(objc_property_t property) {
-  return [[NSString stringWithUTF8String:property_getAttributes(property)] 
+  return [@(property_getAttributes(property)) 
           componentsSeparatedByString:@","];
 }
 
@@ -83,7 +83,7 @@ void *attributeGetter(BackboneModel *self, SEL _cmd) {
   self = [super init];
   
   if (self) {
-    if (!attributes) attributes = [NSDictionary dictionary];
+    if (!attributes) attributes = @{};
     
     if (options & BackboneParseAttributes) attributes = [self parse:attributes];
     if ([[self class] respondsToSelector:@selector(defaults)]) {
@@ -137,7 +137,7 @@ void *attributeGetter(BackboneModel *self, SEL _cmd) {
       value:(id)value
     options:(BackboneOptions)options
 errorCallback:(BackboneErrorBlock)errorCallback {
-  return [self set:[NSDictionary dictionaryWithObject:value forKey:attribute]
+  return [self set:@{attribute: value}
            options:options errorCallback:errorCallback];
 }
 
@@ -211,7 +211,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
 - (BOOL)unset:(NSString *)attribute
       options:(BackboneOptions)options
 errorCallback:(BackboneErrorBlock)errorCallback {
-  return [self unsetAttributes:[NSArray arrayWithObject:attribute] 
+  return [self unsetAttributes:@[attribute] 
                        options:options
              withErrorCallback:errorCallback]; 
 }
@@ -399,7 +399,7 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
       successCallback(model, response);
     } else {
       [model trigger:@"sync" arguments:
-       model, response, [NSNumber numberWithInteger:options], nil];
+       model, response, @(options), nil];
     }
   };
   
@@ -436,7 +436,7 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
   
   void(^triggerDestroy)() = ^() {
     [self trigger:@"destroy" arguments:
-     self, collection_, [NSNumber numberWithInteger:options], nil];
+     self, collection_, @(options), nil];
   };
   
   if ([self isNew]) {
@@ -450,7 +450,7 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
       successCallback(model, response);
     } else {
       [model trigger:@"sync"
-           arguments:model, response, [NSNumber numberWithInteger:options], nil];
+           arguments:model, response, @(options), nil];
     }
   };
   
@@ -490,7 +490,7 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
     errorCallback(self, error);
   } else {
     [self trigger:@"error" arguments:
-     self, error, [NSNumber numberWithInteger:options], nil]; 
+     self, error, @(options), nil]; 
   }
   
   return NO;
@@ -565,7 +565,7 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
     [self trigger:[@"change:" stringByAppendingString:attribute]
         arguments:
      self, [self get:attribute], changes, 
-     [NSNumber numberWithInteger:options], nil];
+     @(options), nil];
   }
   if (changing) return;
   
@@ -573,7 +573,7 @@ errorCallback:(BackboneSyncSuccessBlock)errorCallback {
   while (pending_.count > 0) {
     [pending_ removeAllObjects];
     [self trigger:@"change" arguments:
-     self, changes, [NSNumber numberWithInteger:options], nil];
+     self, changes, @(options), nil];
     
     // Pending and silent changes still remain.
     changed = [NSMutableDictionary dictionaryWithDictionary:changed_];

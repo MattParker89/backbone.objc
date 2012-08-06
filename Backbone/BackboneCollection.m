@@ -169,7 +169,7 @@ errorCallback:errorCallback];
          at:(NSUInteger)at
     options:(BackboneOptions)options
 errorCallback:(BackboneErrorBlock)errorCallback {
-  [self addModels:[NSArray arrayWithObject:modelOrAttributes]
+  [self addModels:@[modelOrAttributes]
                at:at
           options:options
     errorCallback:errorCallback];
@@ -238,7 +238,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
     
     if ([cids objectForKey:cid] || [byCid_ objectForKey:cid] ||
         ((id != nil) && ([ids objectForKey:id] || [byId_ objectForKey:id]))) {
-      [dups addObject:[NSNumber numberWithUnsignedInteger:index]];
+      [dups addObject:@(index)];
     }
     
     [cids setObject:model forKey:cid];
@@ -273,10 +273,9 @@ errorCallback:(BackboneErrorBlock)errorCallback {
 
   for (model in models_) {
     if (![cids objectForKey:model.cid]) continue;
-    NSNumber *index = [NSNumber numberWithUnsignedInteger:
-                       [models_ indexOfObject:model]];
+    NSNumber *index = @([models_ indexOfObject:model]);
     [model trigger:@"add" arguments:
-     model, self, [NSNumber numberWithInteger:options], index, nil];
+     model, self, @(options), index, nil];
   }
 }
 
@@ -285,7 +284,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
 }
 
 - (void)remove:(id)modelOrId options:(BackboneOptions)options {
-  [self removeModels:[NSArray arrayWithObject:modelOrId] options:options];
+  [self removeModels:@[modelOrId] options:options];
 }
 
 - (void)removeModels:(NSArray *)models {
@@ -303,11 +302,11 @@ errorCallback:(BackboneErrorBlock)errorCallback {
     if (!(model = getModel)) continue;
     if ([model id]) [byId_ removeObjectForKey:[model id]];
     [byCid_ removeObjectForKey:[model cid]];
-    index = [NSNumber numberWithUnsignedInteger:[self indexOfObject:model]];
+    index = @([self indexOfObject:model]);
     [models_ removeObject:model];
     if (!(options & BackboneSetSilently)) {
       [model trigger:@"remove" arguments:
-       model, self, [NSNumber numberWithInteger:options], index, nil];
+       model, self, @(options), index, nil];
     }
     [self removeReference:model];
   }
@@ -398,7 +397,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
   NSMutableArray *models;
   BOOL match;
   
-  if (attributes.count == 0) return [NSArray array];
+  if (attributes.count == 0) return @[];
   
   models = [NSMutableArray array];
   
@@ -432,7 +431,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
              [models_ sortedArrayUsingComparator:self.comparator]];
   if (!(options & BackboneSetSilently)) {
     [self trigger:@"reset"
-        arguments:self, [NSNumber numberWithInteger:options], nil];
+        arguments:self, @(options), nil];
   }
 }
 
@@ -456,7 +455,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
 - (void)reset:(NSArray *)models options:(BackboneOptions)options {
   BackboneModel *model;
   
-  models || (models = [NSArray array]);
+  models || (models = @[]);
   
   for (model in models_) {
     [self removeReference:model];
@@ -470,7 +469,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
   
   if (!(options & BackboneSetSilently)) {
     [self trigger:@"reset" arguments:
-     self, [NSNumber numberWithInteger:options], nil];
+     self, @(options), nil];
   }
 }
 
@@ -544,7 +543,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
       successCallback(nextModel, response);
     } else {
       [nextModel trigger:@"sync" arguments:
-       model, response, [NSNumber numberWithInteger:options], nil];
+       model, response, @(options), nil];
     }
   };
   

@@ -33,10 +33,8 @@
 
 - (void)route:(NSRegularExpression *)route
    toCallback:(void (^)(NSString *url))callback {
-  [handlers_ insertObject:[NSDictionary dictionaryWithObjectsAndKeys:
-                           route, @"route",
-                           AH_BLOCK_COPY(callback), @"callback",
-                           nil]
+  [handlers_ insertObject:@{@"route": route,
+                           @"callback": AH_BLOCK_COPY(callback)}
                   atIndex:0];
 }
 

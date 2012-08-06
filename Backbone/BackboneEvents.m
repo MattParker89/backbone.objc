@@ -128,7 +128,7 @@ static NSMutableDictionary *caches__ = nil;
       eventCacheIdentifiers = observerCache.allKeys;
     } else {
       eventCacheIdentifiers = 
-        [NSArray arrayWithObject:[[self class] cacheIdentifierFor:observer]];
+        @[[[self class] cacheIdentifierFor:observer]];
     }
     
     for (eventCacheIdentifier in eventCacheIdentifiers) {
@@ -196,7 +196,7 @@ static NSMutableDictionary *caches__ = nil;
     observerCache =
       [caches__ objectForKey:[[self class] cacheIdentifierFor:self]];
     
-    if (!arguments) arguments = [NSArray array];
+    if (!arguments) arguments = @[];
     
     eventsAsArray = [events componentsSeparatedByCharactersInSet:
                      [NSCharacterSet whitespaceAndNewlineCharacterSet]];

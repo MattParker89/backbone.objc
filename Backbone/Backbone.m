@@ -36,8 +36,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
   NSMutableDictionary *data = nil;
   
   // Translate CRUD method to HTTP equivalient.
-  httpMethod = [[NSArray arrayWithObjects:
-                 @"POST", @"PUT", @"DELETE", @"GET", nil] objectAtIndex:method];
+  httpMethod = [@[@"POST", @"PUT", @"DELETE", @"GET"] objectAtIndex:method];
   
   // Create the request with the default content type.
   request = [NSMutableURLRequest

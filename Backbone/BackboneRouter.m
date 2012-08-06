@@ -64,10 +64,9 @@ static const NSString *escapeRegExp = @"[-\\[\\]{}()+?.,\\\\^$|#\\s]";
   NSUInteger index;
   
   pattern = [NSMutableString stringWithString:route];
-  conversions = [NSArray arrayWithObjects:
-                 escapeRegExp, @"\\\\$0",
+  conversions = @[escapeRegExp, @"\\\\$0",
                  namedParam, @"([^\\/]+)",
-                 splatParam, @"(.*?)", nil];
+                 splatParam, @"(.*?)"];
   
   for (index = 0; index < conversions.count; index ++) {
     routePattern = [conversions objectAtIndex:index];
