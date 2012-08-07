@@ -14,6 +14,10 @@
 #import "BackboneRouter.h"
 #import "BackboneHistory.h"
 
+#define BBTriggerURL(url) \
+  [[Backbone history] navigate:url \
+                       options:BackboneHistoryTrigger]
+
 @interface Backbone : NSObject {
 }
 
