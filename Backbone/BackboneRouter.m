@@ -35,11 +35,8 @@ static const NSString *escapeRegExp = @"[-\\[\\]{}()+?.,\\\\^$|#\\s]";
   }
   
   id callback = ^(NSString *url) {
-    NSArray *args;
-    NSString *eventName;
-    
-    args = [self extractParameters:route url:url];
-    eventName = [NSString stringWithFormat:@"route:%@", name];
+    NSArray *args = [self extractParameters:route url:url];
+    NSString *eventName = [NSString stringWithFormat:@"route:%@", name];
     
     if ([self respondsToSelector:selector]) {
       [self performSelector:selector withObjects:args];
