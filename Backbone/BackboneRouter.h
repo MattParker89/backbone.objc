@@ -12,8 +12,8 @@
 
 @interface BackboneRouter : NSObject <BackboneEventsMixin>
 
-- (void)route:(id)route name:(NSString *)name;
-- (void)route:(id)route name:(NSString *)name selector:(SEL)selector;
+- (void)route:(id)route to:(SEL)selector;
+- (void)route:(id)route to:(SEL)selector named:(NSString *)name;
 
 - (void)navigate:(NSString *)url options:(BackboneHistoryOptions)options;
 

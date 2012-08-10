@@ -25,11 +25,11 @@ static const NSString *escapeRegExp = @"[-\\[\\]{}()+?.,\\\\^$|#\\s]";
   }
 }
 
-- (void)route:(id)route name:(NSString *)name {
-  [self route:route name:name selector:NSSelectorFromString(name)];
+- (void)route:(id)route to:(SEL)selector {
+  [self route:route to:selector named:NSStringFromSelector(selector)];
 }
 
-- (void)route:(id)route name:(NSString *)name selector:(SEL)selector {
+- (void)route:(id)route to:(SEL)selector named:(NSString *)name {
   if ([route isKindOfClass:[NSString class]]) {
     route = [self routeToRegExp:route];
   }
