@@ -42,6 +42,7 @@
 		CAC4EA23155E31D9009BA9D3 /* BackboneModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CAC4EA21155E31D9009BA9D3 /* BackboneModel.h */; };
 		CAC4EA24155E31D9009BA9D3 /* BackboneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4EA22155E31D9009BA9D3 /* BackboneModel.m */; };
 		CAC4EA27155E335F009BA9D3 /* BackboneModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CAC4EA26155E335F009BA9D3 /* BackboneModelTests.m */; };
+		CAE8EFB715D48C4D0078E1D9 /* BackboneRouterSubclass.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE8EFB615D48C4D0078E1D9 /* BackboneRouterSubclass.h */; };
 		CAE95B91155CDF4F0072AA10 /* BackboneEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE95B8F155CDF4F0072AA10 /* BackboneEvents.h */; };
 		CAE95B92155CDF4F0072AA10 /* BackboneEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = CAE95B90155CDF4F0072AA10 /* BackboneEvents.m */; };
 		CAF9333315630329008AEA48 /* BackboneTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF9333215630329008AEA48 /* BackboneTypes.h */; };
@@ -104,6 +105,7 @@
 		CAC4EA22155E31D9009BA9D3 /* BackboneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneModel.m; sourceTree = "<group>"; };
 		CAC4EA25155E335F009BA9D3 /* BackboneModelTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneModelTests.h; sourceTree = "<group>"; };
 		CAC4EA26155E335F009BA9D3 /* BackboneModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneModelTests.m; sourceTree = "<group>"; };
+		CAE8EFB615D48C4D0078E1D9 /* BackboneRouterSubclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneRouterSubclass.h; sourceTree = "<group>"; };
 		CAE95B8F155CDF4F0072AA10 /* BackboneEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneEvents.h; sourceTree = "<group>"; };
 		CAE95B90155CDF4F0072AA10 /* BackboneEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackboneEvents.m; sourceTree = "<group>"; };
 		CAF9333215630329008AEA48 /* BackboneTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackboneTypes.h; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				CABD3183159D038800C14B7E /* BackboneCollection.m */,
 				CA57113D15BA18160048E91F /* BackboneRouter.h */,
 				CA57113E15BA18160048E91F /* BackboneRouter.m */,
+				CAE8EFB615D48C4D0078E1D9 /* BackboneRouterSubclass.h */,
 				CA0A9B3D15B8BE5F0031A322 /* BackboneHistory.h */,
 				CA0A9B3E15B8BE5F0031A322 /* BackboneHistory.m */,
 				CA63C840155C814900600B74 /* Supporting Files */,
@@ -255,6 +258,7 @@
 				CA0A9B3F15B8BE5F0031A322 /* BackboneHistory.h in Headers */,
 				CA57113F15BA18160048E91F /* BackboneRouter.h in Headers */,
 				CAB9778915BB2F7C00E5622E /* NSObject+Backbone.h in Headers */,
+				CAE8EFB715D48C4D0078E1D9 /* BackboneRouterSubclass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
