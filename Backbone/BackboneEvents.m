@@ -194,12 +194,14 @@ static NSMutableDictionary *caches__ = nil;
   
   if (caches__) {
     observerCache =
-      [caches__ objectForKey:[[self class] cacheIdentifierFor:self]];
+      [NSDictionary dictionaryWithDictionary:
+       [caches__ objectForKey:[[self class] cacheIdentifierFor:self]]];
     
     if (!arguments) arguments = @[];
     
-    eventsAsArray = [events componentsSeparatedByCharactersInSet:
-                     [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    eventsAsArray = [NSArray arrayWithArray:
+                     [events componentsSeparatedByCharactersInSet:
+                      [NSCharacterSet whitespaceAndNewlineCharacterSet]]];
     
     // For each event, walk through the list of callbacks twice, first to
     // trigger the event, then to trigger any "all" callbacks.
