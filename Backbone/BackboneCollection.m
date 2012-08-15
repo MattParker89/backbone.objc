@@ -478,12 +478,12 @@ errorCallback:(BackboneErrorBlock)errorCallback {
 }
 
 - (void)fetchWithOptions:(BackboneOptions)options {
-  [self fetchWithSuccessCallback:nil errorCallback:nil options:options];
+  [self fetchWithOptions:options successCallback:nil errorCallback:nil];
 }
 
-- (void)fetchWithSuccessCallback:(BackboneSyncSuccessBlock)successCallback
-                   errorCallback:(BackboneErrorBlock)errorCallback
-                         options:(BackboneOptions)options {
+- (void)fetchWithOptions:(BackboneOptions)options
+         successCallback:(BackboneSyncSuccessBlock)successCallback
+           errorCallback:(BackboneErrorBlock)errorCallback {
   BackboneSyncSuccessBlock wrappedSuccessCallback;
   
   wrappedSuccessCallback = ^(BackboneCollection *collection, id response) {
