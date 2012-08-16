@@ -250,7 +250,8 @@ errorCallback:(BackboneErrorBlock)errorCallback {
   // Remove duplicates.
   index = dups.count;
   while (index --) {
-    [mutableModels removeObjectAtIndex:index];
+    [mutableModels removeObjectAtIndex:
+     [[dups objectAtIndex:index] unsignedIntegerValue]];
   }
   
   // Listen to added models' events, and index models for lookup by
