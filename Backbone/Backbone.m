@@ -94,7 +94,7 @@ errorCallback:(BackboneErrorBlock)errorCallback {
    sendAsynchronousRequest:request
    queue:[NSOperationQueue mainQueue]
    completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
-     if (error && errorCallback) {
+     if (error) {
        // Wrap an optional error callback with a fallback error event.
        if (errorCallback) {
          errorCallback(model, error);
